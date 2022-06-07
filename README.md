@@ -1,13 +1,15 @@
-# Ethereum-ERC20-implementation
-Домашне завдання: 
-Ethereum ERC20 implementation
-Дедлайн: 2го червня 2022 19:00
-Написати й задеплоїти у тестнеті Ropsten Ethereum смарт-контракт - токен ERC-20, назва - Ваше прізвище, розмір емісії визначте самостійно. Коли смартконтракт отримує на вхід транзакцію з певною сумою ETH, він має надіслати у відповідь суму своїх токенів помножену на 100. Контракт має вести реєстр власників токенів та їх балансів. Кожен власник може мати не більше 500 токенів. 
+# Basic Sample Hardhat Project
 
-Бажано використати кращі практики написання смарт-контрактів за допомогою safe-функцій.
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
-Переслати довільну суму своїх токенів на адресу 0xc53D6C0148ddC28Efe623Ab3aD54da5C7779b25C
+Try running some of the following tasks:
 
-Мова Solidity, можна використовувати бібліотеку https://docs.openzeppelin.com/contracts/4.x/erc20 або інші
-
-Завантажити код контракту як pull request
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
+```
