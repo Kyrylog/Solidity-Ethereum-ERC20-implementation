@@ -1,13 +1,19 @@
-# Ethereum-ERC20-implementation
-Домашне завдання: 
-Ethereum ERC20 implementation
-Дедлайн: 2го червня 2022 19:00
-Написати й задеплоїти у тестнеті Ropsten Ethereum смарт-контракт - токен ERC-20, назва - Ваше прізвище, розмір емісії визначте самостійно. Коли смартконтракт отримує на вхід транзакцію з певною сумою ETH, він має надіслати у відповідь суму своїх токенів помножену на 100. Контракт має вести реєстр власників токенів та їх балансів. Кожен власник може мати не більше 500 токенів. 
+# Karpunets ERC20 token
 
-Бажано використати кращі практики написання смарт-контрактів за допомогою safe-функцій.
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+npx hardhat run --network {network} scripts/deploy.js
+npx hardhat verify --contract "contracts/KarpunetsToken.sol:KarpunetsToken" --network {network} {address}
+npx hardhat help
+```
 
-Переслати довільну суму своїх токенів на адресу 0xc53D6C0148ddC28Efe623Ab3aD54da5C7779b25C
-
-Мова Solidity, можна використовувати бібліотеку https://docs.openzeppelin.com/contracts/4.x/erc20 або інші
-
-Завантажити код контракту як pull request
+.env file
+```dotenv
+ALCHEMY_KEY=
+ETHERSCAN_API_KEY=
+PRIVATE_KEY_TESTNET=
+```
