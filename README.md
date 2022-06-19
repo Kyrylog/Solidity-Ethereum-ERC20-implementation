@@ -1,3 +1,15 @@
+# Ethereum-ERC20-implementation
+
+Ethereum ERC20 implementation
+
+Write and deploy in the Ropsten Ethereum test contract a smart contract - ERC-20 token, name - your last name, determine the size of the issue yourself. When a smart contract receives a transaction with a certain amount of ETH, it must send back the amount of its tokens multiplied by 100. The contract must keep a register of token owners and their balances. Each owner can have no more than 500 tokens.
+
+It is advisable to use best practices for writing smart contracts using safe features.
+Send any amount of your tokens to 0xc53D6C0148ddC28Efe623Ab3aD54da5C7779b25C
+Download the contract code as a pull request
+
+Solidity language, you can use the library https://docs.openzeppelin.com/contracts/4.x/erc20 or others
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
